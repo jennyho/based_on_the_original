@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Based on the Orginal</title>
+	
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="jquery.fullPage.css" />
+    <link rel="stylesheet" href="jquery-ui.min.css" />
+    
+	<script src="jquery-3.1.0.min.js"></script>
+    <script src="jquery-ui.min.js"></script>
+	<script type="text/javascript" src="jquery.fullPage.js"></script>
+    
+
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('#fullpage').fullpage({
+				anchors: ['firstPage'],
+				slidesNavigation: false,
+                menu: '#menu',
+                controlArrows: false,
+			});
+		});
+	</script>
+
+</head>
+    
+    
+    
+<body>
+<div id="nav-bg"></div>
+<div id="bg1"></div>
+<div id="bg2"></div>
+<div id="bg3"></div>
+<div id="bg4"></div>
+    
+<ul id="menu">
+    <li data-menuanchor="home"><a id="home" href="#firstPage/0">Home</a></li>
+	<li data-menuanchor="time"><a id="time" href="#firstPage/1">Breakdown by Time</a></li>
+	<li data-menuanchor="genre"><a id="genre" href="#firstPage/2">Breakdown by Genre</a></li>
+    <li data-menuanchor="sources"><a id="sources" href="#firstPage/3">Documentation</a></li>
+</ul>
+     
+<div id="fullpage">
+    
+	<div class="section" id="section1">
+        
+        <!--title page-->
+	    <div class="slide" id="slide1" data-anchor="slide1">
+            <div class="container">
+                <img src="assets/background1.svg" class="background"/>         
+                <img src="assets/reel.svg" class="reel1"/>
+                <img src="assets/reel.svg" class="reel2"/>
+                
+                <div id="header">
+                    <h1>Based on the</h1>
+                    <div class="source"></div>
+                    <h2>A Visualization of Film Source Material from 1935 to 2010</h2>
+                </div>     
+            </div>   
+		</div>
+        
+        
+        
+        <!--time-->
+	    <div class="slide" id="slide2" data-anchor="slide2">
+			<div class="container">
+                <h3>Adaptations over Time</h3>
+                <div class="instructions">
+                    <p>The section widths represent the percentages of each type of source material within a 5-year interval. Click on the sources at the bottom to see individual trends. </p>
+                </div>
+                
+                <div class="control">
+                    <div class="initial"><h1>10</h1></div>
+                    <div class="undo"><h1>%</h1></div>
+                </div>
+                
+                <div class="graph-bg"></div>
+                <div class="graph">
+                    <!--setup-->
+                    <div class="y-axis"></div>
+                    <p class="y-label1">IMDb Rating</p> 
+                    <p class="y-label2 p4">4/10</p>
+                    <p class="y-label2 p6">6/10</p>
+                    <p class="y-label2 p8">8/10</p>
+                    <div class="y-marker p4"></div>
+                    <div class="y-marker p6"></div>
+                    <div class="y-marker p8"></div>
+                    <div class="arrow-up"></div>
+                    <div class="arrow-down"></div>
+            
+                    <div class="x-axis"></div>
+                    <p class="x-label1">Average: 6.3</p>
+                    <p class="x-label2 y1935">1935</p>
+                    <p class="x-label2 y1940">1940</p>
+                    <p class="x-label2 y1945">1945</p>
+                    <p class="x-label2 y1950">1950</p>
+                    <p class="x-label2 y1955">1955</p>
+                    <p class="x-label2 y1960">1960</p>
+                    <p class="x-label2 y1965">1965</p>
+                    <p class="x-label2 y1970">1970</p>
+                    <p class="x-label2 y1975">1975</p>
+                    <p class="x-label2 y1980">1980</p>
+                    <p class="x-label2 y1985">1985</p>
+                    <p class="x-label2 y1990">1990</p>
+                    <p class="x-label2 y1995">1995</p>
+                    <p class="x-label2 y2000">2000</p>
+                    <p class="x-label2 y2005">2005</p>
+                    <p class="x-label2 y2010">2010</p>
+                    <div class="x-marker y1935"></div>
+                    <div class="x-marker y1940"></div>
+                    <div class="x-marker y1945"></div>
+                    <div class="x-marker y1950"></div>
+                    <div class="x-marker y1955"></div>
+                    <div class="x-marker y1960"></div>
+                    <div class="x-marker y1965"></div>
+                    <div class="x-marker y1970"></div>
+                    <div class="x-marker y1975"></div>
+                    <div class="x-marker y1980"></div>
+                    <div class="x-marker y1985"></div>
+                    <div class="x-marker y1990"></div>
+                    <div class="x-marker y1995"></div>
+                    <div class="x-marker y2000"></div>
+                    <div class="x-marker y2005"></div>
+                    <div class="x-marker y2010"></div>
+                    
+                    <!--data-->
+                    <div class="interval y1935">
+                        <div class="data book"></div>
+                        <div class="data legend"></div>
+                        <div class="data real"></div>
+                    </div>
+                    
+                    <div class="interval y1940">
+                        <div class="data book"></div>
+                        <div class="data comp"></div>
+                        <div class="data original"></div>
+                    </div>
+                    
+                    <div class="interval y1945">
+                        <div class="data book"></div>
+                    </div>
+                    
+                    <div class="interval y1950">
+                        <div class="data play"></div>
+                        <div class="data book"></div>
+                        <div class="data legend"></div>
+                    </div>
+                    
+                    <div class="interval y1955">
+                        <div class="data original"></div>
+                        <div class="data play"></div>
+                        <div class="data book"></div>
+                    </div>
+                    
+                    <div class="interval y1960">
+                        <div class="data book"></div>
+                        <div class="data music"></div>
+                        <div class="data real"></div>
+                        <div class="data original"></div>
+                    </div>
+                    
+                    <div class="interval y1965">
+                        <div class="data remake"></div>
+                        <div class="data comic"></div>
+                        <div class="data original"></div>
+                        <div class="data play"></div>
+                        <div class="data book"></div>
+                    </div>
+                    
+                    <div class="interval y1970">
+                        <div class="data music"></div>
+                        <div class="data original"></div>
+                        <div class="data book"></div>
+                        <div class="data play"></div>
+                    </div>
+                    
+                    <div class="interval y1975">
+                        <div class="data tv"></div>
+                        <div class="data book"></div>
+                        <div class="data music"></div>
+                        <div class="data original"></div>
+                        <div class="data real"></div>
+                        <div class="data comic"></div>
+                    </div>
+                    
+                    <div class="interval y1980">
+                        <div class="data play"></div>
+                        <div class="data real"></div>
+                        <div class="data tv"></div>
+                        <div class="data book"></div>
+                        <div class="data remake"></div>
+                        <div class="data original"></div>
+                        <div class="data legend"></div>
+                        <div class="data comic"></div>
+                    </div>
+                    
+                    <div class="interval y1985">
+                        <div class="data real"></div>
+                        <div class="data play"></div>
+                        <div class="data tv"></div>
+                        <div class="data book"></div>
+                        <div class="data original"></div>
+                        <div class="data remake"></div>
+                        <div class="data comic"></div>
+                    </div>
+                    
+                    <div class="interval y1990">   
+                        <div class="data play"></div>
+                        <div class="data real"></div>
+                        <div class="data remake"></div>
+                        <div class="data book"></div>
+                        <div class="data legend"></div>
+                        <div class="data tv"></div>
+                        <div class="data original"></div>
+                        <div class="data comic"></div>
+                        <div class="data game"></div>
+                    </div>
+                    
+                    <div class="interval y1995">
+                        <div class="data short"></div>
+                        <div class="data real"></div>
+                        <div class="data play"></div>
+                        <div class="data book"></div>
+                        <div class="data legend"></div>
+                        <div class="data music"></div>
+                        <div class="data original"></div>
+                        <div class="data mag"></div>
+                        <div class="data remake"></div>
+                        <div class="data tv"></div>
+                        <div class="data comic"></div>
+                        <div class="data game"></div>    
+                    </div>
+                    
+                    <div class="interval y2000">
+                        <div class="data music"></div>
+                        <div class="data real"></div>
+                        <div class="data book"></div>
+                        <div class="data play"></div>
+                        <div class="data short"></div>
+                        <div class="data comic"></div>
+                        <div class="data legend"></div>
+                        <div class="data mag"></div>
+                        <div class="data remake"></div>
+                        <div class="data disney"></div>
+                        <div class="data original"></div>
+                        <div class="data spinoff"></div>
+                        <div class="data game"></div>
+                        <div class="data tv"></div>
+                    </div>
+                    
+                    <div class="interval y2005">                 
+                        <div class="data fact"></div>
+                        <div class="data disney"></div>
+                        <div class="data real"></div>
+                        <div class="data music"></div>
+                        <div class="data book"></div>
+                        <div class="data comic"></div>
+                        <div class="data tv"></div>
+                        <div class="data original"></div>
+                        <div class="data remake"></div>
+                        <div class="data toy"></div>
+                        <div class="data spinoff"></div>
+                        <div class="data legend"></div>
+                        <div class="data play"></div>
+                        <div class="data game"></div>
+                    </div>
+                    
+                </div>
+                
+                <div class="hold">
+                    <div class="film-mark y1935"></div>
+                    <div class="film-mark y1940"></div>
+                    <div class="film-mark y1945"></div>
+                    <div class="film-mark y1950"></div>
+                    <div class="film-mark y1955"></div>
+                    <div class="film-mark y1960"></div>
+                    <div class="film-mark y1965"></div>
+                    <div class="film-mark y1970"></div>
+                    <div class="film-mark y1975"></div>
+                    <div class="film-mark y1980"></div>
+                    <div class="film-mark y1985"></div>
+                    <div class="film-mark y1990"></div>
+                    <div class="film-mark y1995"></div>
+                    <div class="film-mark y2000"></div>
+                    <div class="film-mark y2005"></div>
+                    <div class="film-mark y2010"></div>
+                    <img class="film top" src="assets/film.svg"/>
+                    <img class="film bottom" src="assets/film.svg"/>
+                </div>
+                
+                
+                
+                <div class="list">
+                    <div class="column">
+                        <p class="all">All Sources</p>
+                        <p class="book">Books & Short Stories</p>
+                        <p class="comic">Comics & Graphic Novels</p>
+                    </div>
+                    <div class="column">
+                        <p class="fact">Nonfiction Books</p>
+                        <p class="game">Games</p>
+                        <p class="mag">Magazine Articles</p>
+                    </div>
+                    <div class="column">
+                        <p class="music">Musicals & Operas</p>
+                        <p class="play">Plays</p>
+                        <p class="real">Real Life Events</p>
+                    </div>
+                    <div class="column">
+                        <p class="short">Short Films</p>
+                        <p class="toy">Toy Franchises</p>
+                        <p class="tv">Television Shows</p> 
+                    </div>
+                    <div class="column">
+                         <p class="comp">Compilations</p>
+                         <p class="disney">Disney Rides</p>
+                         <p class="original">Original Screenplays</p>
+                    </div>
+                    <div class="column">
+                         <p class="remake">Remakes</p>
+                         <p class="spinoff">Spin-Offs</p>
+                         <p class="legend">Legends & Fairytales</p>
+                    </div>
+                </div>
+                
+                
+            </div>
+		</div>
+        
+        
+    
+        <!--genre-->
+		<div class="slide" id="slide3" data-anchor="slide3">
+			<div class="container"> 
+                <h3>Adaptations Within Genres</h3>
+                <div class="instructions">
+                    <p>The section widths represent the percentages of each type of source material within a movie genre. Click on the sources at the bottom to see individual trends. </p>
+                </div>             
+                
+                <div class="control">
+                    <div class="initial2"><h1>10</h1></div>
+                    <div class="undo2"><h1>%</h1></div>
+                </div>
+                
+                <div class="graph-bg"></div>
+                <div class="graph">
+                    <!--setup-->
+                    <div class="y-axis2"></div>
+                    <p class="y-label1-2">IMDb Rating</p> 
+                    <p class="y-label2-2 p4">4/10</p>
+                    <p class="y-label2-2 p6">6/10</p>
+                    <p class="y-label2-2 p8">8/10</p>
+                    <div class="y-marker2 p4"></div>
+                    <div class="y-marker2 p6"></div>
+                    <div class="y-marker2 p8"></div>
+                    <div class="arrow-up2"></div>
+                    <div class="arrow-down2"></div>
+            
+                    <div class="x-axis2"></div>
+                    <p class="x-label1-2">Average: 6.3</p>
+                    <p class="x-label3-2 action">Action</p>
+                    <p class="x-label3-2 adv">Adventure</p>
+                    <p class="x-label3-2 bcom">Black<br/>Comedy</p>
+                    <p class="x-label3-2 comedy">Comedy</p>
+                    <p class="x-label3-2 concert">Concert &<br/>Performance</p>
+                    <p class="x-label3-2 doc">Documentary</p>
+                    <p class="x-label3-2 drama">Drama</p>
+                    <p class="x-label3-2 horror">Horror</p>
+                    <p class="x-label3-2 musical">Musical</p>
+                    <p class="x-label3-2 romcom">Romantic<br/>Comedy</p>
+                    <p class="x-label3-2 thrill">Thriller &<br/>Suspense</p>
+                    <p class="x-label3-2 west">Western</p>
+                    <div class="x-marker2 action"></div>
+                    <div class="x-marker2 adv"></div>
+                    <div class="x-marker2 bcom"></div>
+                    <div class="x-marker2 comedy"></div>
+                    <div class="x-marker2 concert"></div>
+                    <div class="x-marker2 doc"></div>
+                    <div class="x-marker2 drama"></div>
+                    <div class="x-marker2 horror"></div>
+                    <div class="x-marker2 musical"></div>
+                    <div class="x-marker2 romcom"></div>
+                    <div class="x-marker2 thrill"></div>
+                    <div class="x-marker2 west"></div>
+                    <div class="x-marker2 last"></div>
+                    
+                    <!--data-->
+                    <div class="genre action">
+                        <div class="data2 play2"></div>
+                        <div class="data2 book2"></div>
+                        <div class="data2 real2"></div>
+                        <div class="data2 tv2"></div>
+                        <div class="data2 comic2"></div>
+                        <div class="data2 remake2"></div>
+                        <div class="data2 original2"></div>
+                        <div class="data2 mag2"></div>
+                        <div class="data2 toy2"></div>
+                        <div class="data2 spinoff2"></div>
+                        <div class="data2 legend2"></div>
+                        <div class="data2 game2"></div>
+                    </div>
+                    
+                    <div class="genre adv">
+                        <div class="data2 short2"></div>
+                        <div class="data2 original2"></div>
+                        <div class="data2 book2"></div>
+                        <div class="data2 legend2"></div>
+                        <div class="data2 disney2"></div>
+                        <div class="data2 remake2"></div>
+                        <div class="data2 spinoff2"></div>
+                        <div class="data2 comic2"></div>
+                        <div class="data2 real2"></div>
+                        <div class="data2 tv2"></div>
+                        <div class="data2 game2"></div>
+                    </div>
+                    
+                    <div class="genre bcom">
+                        <div class="data2 short2"></div>
+                        <div class="data2 book2"></div>
+                        <div class="data2 original2"></div>
+                        <div class="data2 play2"></div>
+                    </div>
+                    
+                    <div class="genre comedy">
+                        <div class="data2 short2"></div>
+                        <div class="data2 legend2"></div>
+                        <div class="data2 book2"></div>
+                        <div class="data2 real2"></div>
+                        <div class="data2 spinoff2"></div>
+                        <div class="data2 original2"></div>
+                        <div class="data2 remake2"></div>
+                        <div class="data2 comic2"></div>
+                        <div class="data2 play2"></div>
+                        <div class="data2 mag2"></div>
+                        <div class="data2 tv2"></div>
+                    </div>
+                    
+                    <div class="genre concert">
+                        <div class="data2 real2"></div>
+                        <div class="data2 original2"></div>
+                    </div>
+                    
+                    <div class="genre doc">
+                        <div class="data2 real2"></div>
+                        <div class="data2 tv2"></div>
+                    </div>
+                    
+                    <div class="genre drama">
+                        <div class="data2 short2"></div>
+                        <div class="data2 comic2"></div>
+                        <div class="data2 tv2"></div>
+                        <div class="data2 fact2"></div>
+                        <div class="data2 real2"></div>
+                        <div class="data2 book2"></div>
+                        <div class="data2 play2"></div>
+                        <div class="data2 original2"></div>
+                        <div class="data2 remake2"></div>
+                        <div class="data2 mag2"></div>
+                        <div class="data2 legend2"></div>
+                    </div>
+                    
+                    <div class="genre horror">
+                        <div class="data2 comic2"></div>
+                        <div class="data2 real2"></div>
+                        <div class="data2 tv2"></div>
+                        <div class="data2 book2"></div>
+                        <div class="data2 original2"></div>
+                        <div class="data2 spinoff2"></div>
+                        <div class="data2 game2"></div>
+                        <div class="data2 remake2"></div>
+                    </div>
+                    
+                    <div class="genre musical">
+                        <div class="data2 comp2"></div>
+                        <div class="data2 legend2"></div>
+                        <div class="data2 real2"></div>
+                        <div class="data2 music2"></div>
+                        <div class="data2 play2"></div>
+                        <div class="data2 book2"></div>
+                        <div class="data2 original2"></div>
+                        <div class="data2 remake2"></div>
+                        <div class="data2 tv2"></div>
+                    </div>
+                    
+                    <div class="genre romcom">
+                        <div class="data2 real2"></div>
+                        <div class="data2 play2"></div>
+                        <div class="data2 book2"></div>
+                        <div class="data2 original2"></div>
+                        <div class="data2 remake2"></div>
+                        <div class="data2 legend2"></div>
+                    </div>
+                    
+                    <div class="genre thrill">
+                        <div class="data2 tv2"></div>
+                        <div class="data2 real2"></div>
+                        <div class="data2 book2"></div>
+                        <div class="data2 remake2"></div>
+                        <div class="data2 original2"></div>
+                        <div class="data2 fact2"></div>
+                        <div class="data2 comic2"></div>
+                    </div>
+                    
+                    <div class="genre west">
+                        <div class="data2 book2"></div>
+                        <div class="data2 original2"></div>
+                        <div class="data2 remake2"></div>
+                        <div class="data2 real2"></div>
+                    </div>
+                </div>
+                
+                <div class="hold2">
+                    <div class="film-mark action"></div>
+                    <div class="film-mark adv"></div>
+                    <div class="film-mark bcom"></div>
+                    <div class="film-mark comedy"></div>
+                    <div class="film-mark concert"></div>
+                    <div class="film-mark doc"></div>
+                    <div class="film-mark drama"></div>
+                    <div class="film-mark horror"></div>
+                    <div class="film-mark musical"></div>
+                    <div class="film-mark romcom"></div>
+                    <div class="film-mark thrill"></div>
+                    <div class="film-mark west"></div>
+                    <div class="film-mark last"></div>
+                    <img class="film2 top" src="assets/film.svg"/>
+                    <img class="film2 bottom" src="assets/film.svg"/>
+                </div>
+                
+                
+                
+                <div class="list2">
+                    <div class="column">
+                        <p class="all2">All Sources</p>
+                        <p class="book2">Books & Short Stories</p>
+                        <p class="comic2">Comics & Graphic Novels</p>
+                    </div>
+                    <div class="column">
+                        <p class="fact2">Nonfiction Books</p>
+                        <p class="game2">Games</p>
+                        <p class="mag2">Magazine Articles</p>
+                    </div>
+                    <div class="column">
+                        <p class="music2">Musicals & Operas</p>
+                        <p class="play2">Plays</p>
+                        <p class="real2">Real Life Events</p>
+                    </div>
+                    <div class="column">
+                        <p class="short2">Short Films</p>
+                        <p class="toy2">Toy Franchises</p>
+                        <p class="tv2">Television Shows</p> 
+                    </div>
+                    <div class="column">
+                         <p class="comp2">Compilations</p>
+                         <p class="disney2">Disney Rides</p>
+                         <p class="original2">Original Screenplays</p>
+                    </div>
+                    <div class="column">
+                         <p class="remake2">Remakes</p>
+                         <p class="spinoff2">Spin-Offs</p>
+                         <p class="legend2">Legends & Fairytales</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        
+        
+        <!--documentation-->
+        <div class="slide" id="slide4" data-anchor="slide4">
+            <div class="container">
+                <div class="text">
+                    <h3>Sources</h3>
+                </div>
+                
+                <div class="text">
+                    <p>The movie dataset I used came from a website for a data visualization course at the University of Washington, linked <a href="https://courses.cs.washington.edu/courses/cse512/16sp/a2.html
+        ">here</a>.</p>        
+                    <p>It should be noted that the methods for selecting which movies are included in the dataset aren’t stated, despite the large sample. The dataset's sources and creators are also unknown.</p> 
+                </div>
+                
+                <div class="text">
+                    <h3>Method</h3>
+                </div>
+                
+                 <div class="text">
+                    <p>The dataset is narrowed down to those entries that had listed source material, release dates, IMDb ratings, and genres. While ratings from both Rotten Tomatoes and IMDb were included, I chose the latter because more people gave ratings. I also limited the movies to those released between 1935 and 2010. </p>
+                    <p>Then, with Excel, I looked at how films with varying source material were rated, with a particular interested to trends over time and within specific genres. I created some of the graphics in Illustrator, and created the site with HTML/CSS/jQuery. </p>
+                </div>  
+            </div>
+		</div>
+        
+        
+        
+        
+	</div>
+</div> <!--end content-->
+
+    
+    
+    
+<div class="min">
+    <h1 class="message"> Please view fullscreen on desktops. </h1>
+</div>
+    
+<script type="text/javascript" src="data.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,1658 @@
+@import 'https://fonts.googleapis.com/css?family=Abel|Limelight';
+
+body {
+    font-family: "Abel", sans-serif;
+    font-size: 16px;
+    line-height: 1.5em;
+    color: #3B3B3B;
+    background-color: #F8DE7E;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+}
+
+
+
+/*text*/
+h1 {
+    font-family: 'Limelight', cursive;
+    font-size: 1.4em;
+}
+
+.source {
+    position: absolute;
+    font-family: 'Limelight', cursive;
+    font-size: 2.8em;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 1.4em;
+    margin-top: 3em;
+    width: 70%;
+}
+
+h3 {
+    font-family: 'Limelight', cursive;
+    font-size: 1.4em;
+    line-height: 1.4em;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+p {
+    line-height: 1.2em;
+    margin-bottom: -.5em;
+}
+
+a {
+    text-decoration: none;
+    color: #3B3B3B;
+}
+
+
+
+/*navigation*/
+#menu {
+    position: absolute;
+    z-index: 100;
+    max-width: none;
+    right: 0;
+    padding-right: 1em;
+}
+
+#menu li {
+    list-style: none;
+    text-align: right;
+}
+
+#home {
+    color: #F8DE7E;
+}
+
+#nav-bg {
+    background: #F8DE7E;
+    height: 6.5em;
+    width: 10em;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 100;
+}
+
+#bg1, #bg2, #bg3, #bg4 {
+    background: #3B3B3B;
+    height: 1.5em;
+    position: absolute;
+    z-index: 100;
+}
+
+#bg1 {
+    width: 4.25em;
+    top: 1em;
+    right: 0em;
+}
+
+#bg2 {
+    width: 9.25em;
+    top: 2.5em;
+    right: -9.25em;
+}
+
+#bg3 {
+    width: 9.75em;
+    top: 4em;
+    right: -9.75em;
+}
+
+#bg4 {
+    width: 8em;
+    top: 5.5em;
+    right: -8em;
+}
+
+
+
+/*title page*/
+.background {
+    height: 100%;
+    width: auto;
+    top: 0px;
+    position: absolute;
+}
+
+.reel1, .reel2 {
+    position: absolute;
+    -webkit-animation:spin 3s linear infinite;
+    -moz-animation:spin 3s linear infinite;
+    animation:spin 3s linear infinite;
+    transform-origin: 50%, 50%;
+    height: 20vh;
+    top: 16vh;
+}
+
+.reel1 {
+    left: 10vh;
+}
+
+.reel2 {
+    left: 33vh;
+}
+
+@-moz-keyframes spin {100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+
+#header {
+    position: absolute;
+    top: 50vh;
+    left: 50vw;
+    transform: translate(0, -50%);
+}
+
+
+
+/*descriptions*/
+#slide2 h3, #slide3 h3 {
+    margin: 1em 0 0 1em;
+}
+
+.instructions{
+    margin: -.2em 0 0 1.3em;
+    width: 540px;
+}
+
+
+
+/*list of sources*/
+.list, .list2 {
+    position: absolute;
+    bottom: 11%;
+    transform: translate(0, 50%);
+    margin: 2em 0 0 1.3em;
+}
+
+.list .column, .list2 .column {
+    display: inline-block;
+    margin-right: 2em;
+}
+
+.list p, .list2 p  {
+    line-height: 1.2em;
+    margin: 0;
+}
+
+.all, all2 {
+     color: #3B3B3B;
+}
+
+.book, .book2 {
+    color: #4DD0E1;
+}
+
+.comic, .comic2 {
+    color: #3C96C0;
+}
+
+.fact, .fact2 {
+    color: #2B5D9F;
+}
+
+.game, .game2 {
+    color: #1A237E;
+}
+
+.mag, .mag2 {
+    color: #14144C;
+}
+
+.music, .music2 {
+    color: #F8C55E;
+}
+
+.play, .play2 {
+    color: #F7AD3F;
+}
+
+.real, .real2 {
+    color: #F6941F;
+}
+
+.short, .short2 {
+    color: #F57C00;
+}
+
+.toy, .toy2 {
+    color: #F5601B;
+}
+
+.tv, .tv2 {
+    color: #F44336;   
+}
+
+.comp, .comp2 {
+    color: #342051;
+}
+
+.disney, .disney2 {
+    color: #652343;
+}
+
+.original, .original2 {
+    color: #952536;
+}
+
+.remake, .remake2 {
+    color: #C62828;
+}
+
+.spinoff, .spinoff2 {
+    color: #BF4E2E;
+}
+
+.legend, .legend2 {
+    color: #B87333;
+}
+
+
+
+/*graphs*/
+.graph-bg {
+    background: #F4F4F4;
+    position: absolute;
+    height: 80vh;
+    width: 100vw;
+    bottom: 0;
+}
+
+.graph {
+    position: absolute;
+    top: 25vh;
+    height: 65vh;
+    width: 100vw;
+}
+
+.y-axis, .y-axis2 {
+    width: 2px;
+    background-color: #3B3B3B;
+    height: 80%;
+    margin-left: 3%;
+}
+
+.y-label1, .y-label2, .y-label1-2, .y-label2-2 {
+    position: absolute;
+}
+
+.y-label1, .y-label1-2 {
+    bottom: 100%;
+    font-size: .8em;
+    left: 3.5em;
+}
+
+.y-label2, .y-label2-2 {
+    font-size: .8em;
+    left: 3.5em;
+}
+
+.y-marker, .y-marker2 {
+    height: 1px;
+    width: .75em;
+    background-color: #3B3B3B;
+    margin-left: 2.5%;
+    position: absolute;
+}
+
+.arrow-up, .arrow-up2 {
+    width: 0; 
+    height: 0; 
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-bottom: 8px solid #3B3B3B;
+    position: absolute;
+    top: -1%;
+    left: 2.72%;
+}
+
+.arrow-down, .arrow-down2 {
+    width: 0; 
+    height: 0; 
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-top: 8px solid #3B3B3B;
+    position: absolute;
+    bottom: 19%;
+    left: 2.72%;
+}
+
+.p0 {
+    bottom: 0%;
+}
+
+.p2 {
+    bottom: 20%;
+}
+
+.p4 {
+    bottom: 40%;
+}
+
+.p6 {
+    bottom: 60%;
+}
+
+.p8 {
+    bottom: 80%;
+}
+
+.p10 {
+    bottom: 100%;
+}
+
+.x-axis, .x-axis2 {
+    height: 2px;
+    width: 94%;
+    background-color: #3B3B3B;
+    left: 3%;
+    position: absolute;
+    bottom: 63%;
+}
+
+.x-marker, .x-marker2 {
+    width: 1px;
+    background-color: #3B3B3B;
+    position: absolute;
+    bottom: 60%;
+}
+
+.x-marker {
+    height: 75%;
+    transform: translate(0, 50%);
+}
+
+.x-marker2 {
+    height: 80%;
+    transform: translate(0, 52%)
+}
+
+.x-label1, .x-label1-2 {
+    position: absolute;
+    bottom: 65.5%;
+    font-size: .8em;
+    left: 3.5em;
+}
+
+.x-label2 {
+    position: absolute;
+    bottom: 20%;
+    left: 20%;
+    font-size: .8em;
+    transform: translate(-50%, 0);
+    transition-duration: 0.5s;
+}
+
+.x-label3-2 {
+    position: absolute;
+    bottom: 20%;
+    left: 20%;
+    width: 7.5%;
+    text-align: center;
+    font-size: .8em;
+    transform: translate(0%, 0);
+    transition-duration: 0.5s;
+}
+
+.interval .book, .genre .book2 {
+    background: #4DD0E1;
+}
+
+.interval .comic, .genre .comic2 {
+    background: #3C96C0;
+}
+
+.interval .fact, .genre .fact2 {
+    background: #2B5D9F;
+}
+
+.interval .game, .genre .game2 {
+    background: #1A237E;
+}
+
+.interval .mag, .genre .mag2 {
+    background: #14144C;
+}
+
+.interval .music, .genre .music2 {
+    background: #F8C55E;
+}
+
+.interval .play, .genre .play2 {
+    background: #F7AD3F;
+}
+
+.interval .real, .genre .real2 {
+    background: #F6941F;
+}
+
+.interval .short, .genre .short2 {
+    background: #F57C00;
+}
+
+.interval .toy, .genre .toy2 {
+    background: #F5601B;
+}
+
+.interval .tv, .genre .tv2 {
+    background: #F44336;   
+}
+
+.interval .comp, .genre .comp2 {
+    background: #342051;
+}
+
+.interval .disney, .genre .disney2 {
+    background: #652343;
+}
+
+.interval .original, .genre .original2 {
+    background: #952536;
+}
+
+.interval .remake, .genre .remake2 {
+    background: #C62828;
+}
+
+.interval .spinoff, .genre .spinoff2 {
+    background: #BF4E2E;
+}
+
+.interval .legend, .genre .legend2 {
+    background: #B87333;
+}
+
+.y1935 {
+    left:7%;
+}
+
+.y1940 {
+    left:13%;
+}
+
+.y1945 {
+    left:19%;
+}
+
+.y1950 {
+    left:25%;
+}
+
+.y1955 {
+    left:31%;
+}
+
+.y1960 {
+    left:37%;
+}
+
+.y1965 {
+    left:43%;
+}
+
+.y1970 {
+    left:49%;
+}
+
+.y1975 {
+    left:55%;
+}
+
+.y1980 {
+    left:61%;
+}
+
+.y1985 {
+    left:67%;
+}
+
+.y1990 {
+    left:73%;
+}
+
+.y1995 {
+    left:79%;
+}
+
+.y2000 {
+    left:85%;
+}
+
+.y2005 {
+    left:91%;
+}
+
+.y2010 {
+    left:97%;
+}
+
+.action {
+    left:7%;
+}
+
+.adv {
+    left:14.5%;
+}
+
+.bcom {
+    left:22%;
+}
+
+.comedy {
+    left:29.5%;
+}
+
+.concert {
+    left:37%;
+}
+
+.doc {
+    left:44.5%;
+}
+
+.drama {
+    left:52%;
+}
+
+.horror {
+    left:59.5%;
+}
+
+.musical {
+    left:67%;
+}
+
+.romcom {
+    left:74.5%;
+}
+
+.thrill {
+    left:82%;
+}
+
+.west {
+    left:89.5%;
+}
+
+.last {
+    left:97%;
+}
+
+
+
+/*data points*/
+.interval {
+    position: absolute;
+    width: 6%;
+    display: inline-flex;
+    height: 100%;
+}
+
+.genre {
+    position: absolute;
+    width: 7.5%;
+    display: inline-flex;
+    height: 100%;
+}
+
+.data, .data2 {
+    height: 12%;
+    display: flex;
+    transform: translate(0, 9vh);
+    position: relative;
+    transition-duration: 0.5s;
+}
+
+
+
+/*time graph*/
+.y1935 .book {
+    width: 50%;
+    bottom: 83%;
+}
+
+.y1935 .real {
+    width: 25%;
+    bottom: 63%;
+}
+
+.y1935 .legend {
+    width: 25%;
+    bottom: 78%;
+}
+
+.y1940 .book {
+    width: 25%;
+    bottom: 79%;
+}
+
+.y1940 .comp {
+    width: 25%;
+    bottom: 78%;
+}
+
+.y1940 .original {
+    flex-grow: 1;
+    bottom: 64%;
+}
+
+.y1945 .book {
+    flex-grow: 1;
+    bottom: 82%;
+}
+
+.y1950 .book {
+    width: 71.4%;
+    bottom: 70%;
+}
+
+.y1950 .play {
+    width: 14.3%;
+    bottom: 81%;
+}
+
+.y1950 .legend {
+    width: 14.3%;
+    bottom: 51%;
+}
+
+.y1955 .book {
+    width: 50%;
+    bottom: 74%;
+}
+
+.y1955 .play {
+    width: 16.7%;
+    bottom: 80%;
+}
+
+.y1955 .original {
+    width: 33.3%;
+    bottom: 89%;
+}
+
+.y1960 .book {
+    width: 50%;
+    bottom: 79%;
+}
+
+.y1960 .music {
+    width: 10%;
+    bottom: 79%;
+}
+
+.y1960 .real {
+    width: 20%;
+    bottom: 73%;
+}
+
+.y1960 .original {
+    width: 20%;
+    bottom: 68%;
+}
+
+.y1965 .book {
+    width: 41.2%;
+    bottom: 71%;
+}
+
+.y1965 .comic {
+    width: 5.9%;
+    bottom: 77%;
+}
+
+.y1965 .play {
+    width: 5.9%;
+    bottom: 71%;
+}
+
+.y1965 .original {
+    width: 41.2%;
+    bottom: 73%;
+}
+
+.y1965 .remake {
+    width: 5.9%;
+    bottom: 80%;
+}
+
+.y1970 .book {
+    width: 31.6%;
+    bottom: 71%;
+}
+
+.y1970 .music {
+    width: 5.3%;
+    bottom: 77%;
+}
+
+.y1970 .play {
+    width: 10.5%;
+    bottom: 71%;
+}
+
+.y1970 .original {
+    width: 52.6%;
+    bottom: 73%;
+}
+
+.y1975 .book {
+    width: 39.3%;
+    bottom: 70%;
+}
+
+.y1975 .comic {
+    width: 4%;
+    bottom: 49%;
+}
+
+.y1975 .music {
+    width: 4%;
+    bottom: 70%;
+}
+
+.y1975 .real {
+    width: 4%;
+    bottom: 62%;
+}
+
+.y1975 .tv {
+    width: 4%;
+    bottom: 72%;
+}
+
+.y1975 .original {
+    width: 46.4%;
+    bottom: 70%;
+}
+
+.y1980 .book {
+    width: 34.7%;
+    bottom: 67%;
+}
+
+.y1980 .comic {
+    width: 5.1%;
+    bottom: 56%;
+}
+
+.y1980 .play {
+    width: 3%;
+    bottom: 84%;
+}
+
+.y1980 .real {
+    width: 3.1%;
+    bottom: 80%;
+}
+
+.y1980 .tv {
+    width: 3.1%;
+    bottom: 69%;
+}
+
+.y1980 .original {
+    flex-grow: 1;
+    bottom: 63%;
+}
+
+.y1980 .remake {
+    width: 3%;
+    bottom: 64%;
+}
+
+.y1980 .legend {
+    width: 3%;
+    bottom: 59%;
+}
+
+.y1985 .book {
+    width: 27.2%;
+    bottom: 65%;
+}
+
+.y1985 .comic {
+    width: 3%;
+    bottom: 50%;
+}
+
+.y1985 .play {
+    width: 3%;
+    bottom: 70%;
+}
+
+.y1985 .real {
+    width: 3%;
+    bottom: 75%;
+}
+
+.y1985 .tv {
+    width: 3%;
+    bottom: 68%;
+}
+
+.y1985 .original {
+    flex-grow: 1;
+    bottom: 64%;
+}
+
+.y1985 .remake {
+    width: 3.5%;
+    bottom: 56%;
+}
+
+.y1990 .book {
+    width: 24.5%;
+    bottom: 67%;
+} 
+
+.y1990 .comic {
+    width: 3.7%;
+    bottom: 55%;
+} 
+
+.y1990 .game {
+    width: 3%;
+    bottom: 36%;
+} 
+
+.y1990 .play {
+    width: 3%;
+    bottom: 75%;
+} 
+
+.y1990 .real {
+    width: 3.7%;
+    bottom: 74%;
+} 
+
+.y1990 .tv {
+    width: 6.1%;
+    bottom: 66%;
+} 
+
+.y1990 .original {
+    flex-grow: 1;
+    bottom: 62%;
+}
+
+.y1990 .remake {
+    width: 3%;
+    bottom: 70%;
+}
+
+.y1990 .legend {
+    width: 3%;
+    bottom: 67%;
+}
+
+.y1995 .book {
+    width: 24%;
+    bottom: 64%;
+} 
+
+.y1995 .comic {
+    width: 3%;
+    bottom: 51%;
+} 
+
+.y1995 .game {
+    width: 3%;
+    bottom: 41%;
+} 
+
+.y1995 .mag {
+    width: 3%;
+    bottom: 59%;
+}
+
+.y1995 .music {
+    width: 3%;
+    bottom: 61%;
+}
+
+.y1995 .play {
+    width: 3%;
+    bottom: 67%;
+} 
+
+.y1995 .real {
+    width: 6.7%;
+    bottom: 69%;
+} 
+
+.y1995 .short {
+    width: 3%;
+    bottom: 78%;
+} 
+
+.y1995 .tv {
+    width: 4.4%;
+    bottom: 52%;
+} 
+
+.y1995 .original {
+    flex-grow: 1;
+    bottom: 61%;
+}
+
+.y1995 .remake {
+    width: 3.1%;
+    bottom: 56%;
+}
+
+.y1995 .legend {
+    width: 3%;
+    bottom: 64%;
+}
+
+.y2000 .book {
+    width: 19%;
+    bottom: 65%;
+}
+
+.y2000 .comic {
+    width: 3%;
+    bottom: 63%;
+}
+
+.y2000 .game {
+    width: 3%;
+    bottom: 56%;
+}
+
+.y2000 .mag {
+    width: 3%;
+    bottom: 60%;
+}
+
+.y2000 .music {
+    width: 3%;
+    bottom: 73%;
+}
+
+.y2000 .play {
+    width: 3%;
+    bottom: 65%;
+}
+
+.y2000 .real {
+    width: 5.3%;
+    bottom: 67%;
+}
+
+.y2000 .short {
+    width: 3%;
+    bottom: 64%;
+}
+
+.y2000 .tv {
+    width: 4%;
+    bottom: 51%;
+}
+
+.y2000 .disney {
+    width: 3%;
+    bottom: 59%;
+}
+
+.y2000 .original {
+    flex-grow: 1;
+    bottom: 59%;
+}
+
+.y2000 .remake {
+    width: 4.8%;
+    bottom: 60%;
+}
+
+.y2000 .spinoff {
+    width: 3%;
+    bottom: 59%;
+}
+
+.y2000 .legend {
+    width: 3%;
+    bottom: 61%;
+}
+
+.y2005 .book {
+    width: 21.8%;
+    bottom: 67%;
+}
+
+.y2005 .comic {
+    width: 3.4%;
+    bottom: 65%;
+}
+
+.y2005 .fact {
+    width: 3%;
+    bottom: 72%;
+}
+
+.y2005 .game {
+    width: 3%;
+    bottom: 47%;
+}
+
+.y2005 .music {
+    width: 3%;
+    bottom: 68%;
+}
+
+.y2005 .play {
+    width: 3%;
+    bottom: 55%;
+}
+
+.y2005 .real {
+    width: 9.8%;
+    bottom: 71%;
+}
+
+.y2005 .toy {
+    width: 3%;
+    bottom: 58%;
+}
+
+.y2005 .tv {
+    width: 3%;
+    bottom: 62%;
+}
+
+.y2005 .disney {
+    width: 3%;
+    bottom: 72%;
+}
+
+.y2005 .original {
+    flex-grow: 1;
+    bottom: 62%;
+}
+
+.y2005 .remake {
+    width: 6.1%;
+    bottom: 59%;
+}
+
+.y2005 .spinoff {
+    width: 3%;
+    bottom: 56%;
+}
+
+.y2005 .legend {
+    width: 3%;
+    bottom: 56%;
+}
+
+
+
+/*genre graph*/
+.action .book2 {
+    width: 20.2%;
+    bottom: 66%;
+}
+
+.action .comic2 {
+    width: 11.1%;
+    bottom: 62%;
+}
+
+.action .game2 {
+    width: 3%;
+    bottom: 43%;
+}
+
+.action .mag2 {
+    width: 3%;
+    bottom: 58%;
+}
+
+.action .play2 {
+    width: 3%;
+    bottom: 75%;
+}
+
+.action .real2 {
+    width: 3%;
+    bottom: 66%;
+}
+
+.action .toy2 {
+    width: 3%;
+    bottom: 58%;
+}
+
+.action .tv2 {
+    width: 5.1%;
+    bottom: 64%;
+}
+
+.action .original2 {
+    flex-grow: 1;
+    bottom: 60%;
+}
+
+.action .remake2 {
+    width: 3%;
+    bottom: 61%;
+}
+
+.action .spinoff2 {
+    width: 3%;
+    bottom: 56%;
+}
+
+.action .legend2 {
+    width: 3%;
+    bottom: 54%;
+}
+
+.adv .book2 {
+    flex-grow: 1;
+    bottom: 65%;
+}
+
+.adv .comic2 {
+    width: 8.1%;
+    bottom: 59%;
+}
+
+.adv .game2 {
+    width: 3%;
+    bottom: 52%;
+}
+
+.adv .real2 {
+    width: 3%;
+    bottom: 59%;
+}
+
+.adv .short2 {
+    width: 3%;
+    bottom: 66%;
+}
+
+.adv .tv2 {
+    width: 11%;
+    bottom: 55%;
+}
+
+.adv .disney2 {
+    width: 3%;
+    bottom: 65%;
+}
+
+.adv .original2 {
+    flex-grow: 1;
+    bottom: 66%;
+}
+
+.adv .remake2 {
+    width: 6.1%;
+    bottom: 61%;    
+}
+
+.adv .spinoff2 {
+    width: 3%;
+    bottom: 60%;
+}
+
+.adv .legend2 {
+    width: 3%;
+    bottom: 65%;
+}
+
+.bcom .book2 {
+    width: 30.6%;
+    bottom: 71%;
+}
+
+.bcom .play2 {
+    width: 3%;
+    bottom: 57%;
+}
+
+.bcom .short2 {
+    width: 3%;
+    bottom: 79%;
+}
+
+.bcom .original2 {
+    flex-grow: 1;
+    bottom: 66%;
+}
+
+.comedy .book2 {
+    width: 11.6%;
+    bottom: 63%;
+}
+
+.comedy .comic2 {
+    width: 3%;
+    bottom: 56%;
+}
+
+.comedy .mag2 {
+    width: 3%;
+    bottom: 54%;
+}
+
+.comedy .play2 {
+    width: 3%;
+    bottom: 56%;
+}
+
+.comedy .real2 {
+    width: 3%;
+    bottom: 62%;
+}
+
+.comedy .short2 {
+    width: 3%;
+    bottom: 65%;
+}
+
+.comedy .tv2 {
+    width: 7.2%;
+    bottom: 54%;
+}
+
+.comedy .original2 {
+    flex-grow: 1;
+    bottom: 58%;
+}
+
+.comedy .remake2 {
+    width: 4.4%;
+    bottom: 58%;
+}
+
+.comedy .spinoff2 {
+    width: 3%;
+    bottom: 61%;
+}
+
+.comedy .legend2 {
+    width: 3%;
+    bottom: 65%;
+}
+
+.concert .real2 {
+    width: 80%;
+    bottom: 65%;
+}
+
+.concert .original2 {
+    width: 20%;
+    bottom: 59%;
+}
+
+.doc .real2 {
+    width: 97%;
+    bottom: 71%;
+}
+
+.doc .tv2 {
+    width: 3%;
+    bottom: 30%;
+}
+
+.drama .book2 {
+    width: 30%;
+    bottom: 69%;
+}
+
+.drama .comic2 {
+    width: 3%;
+    bottom: 76%;
+}
+
+.drama .fact2 {
+    width: 3%;
+    bottom: 72%;
+}
+
+.drama .mag2 {
+    width: 3%;
+    bottom: 61%;
+}
+
+.drama .play2 {
+    width: 3.8%;
+    bottom: 69%;
+}
+
+.drama .real2 {
+    width: 15.4%;
+    bottom: 70%;
+}
+
+.drama .short2 {
+    width: 3%;
+    bottom: 81%;
+}
+
+.drama .tv2 {
+    width: 3%;
+    bottom: 73%;
+}
+
+.drama .original2 {
+    flex-grow: 1;
+    bottom: 66%;
+}
+
+.drama .remake2 {
+    width: 3%;
+    bottom: 67%;
+}
+
+.drama .legend2 {
+    width: 3%;
+    bottom: 54%;
+}
+
+.horror .book2 {
+    width: 19.5%;
+    bottom: 60%;
+}
+
+.horror .comic2 {
+    width: 3%;
+    bottom: 66%;
+}
+
+.horror .game2 {
+    width: 3.8%;
+    bottom: 55%;
+}
+
+.horror .real2 {
+    width: 3%;
+    bottom: 63%;
+}
+
+.horror .tv2 {
+    width: 3%;
+    bottom: 63%;
+}
+
+.horror .original2 {
+    flex-grow: 1;
+    bottom: 57%;
+}
+
+.horror .remake2 {
+    width: 14.6%;
+    bottom: 55%;
+}
+
+.horror .spinoff2 {
+    width: 3%;
+    bottom: 56%;
+}
+
+.musical .book2 {
+    width: 18.4%;
+    bottom: 65%;
+}
+
+.musical .music2 {
+    width: 18.4%;
+    bottom: 71%;
+}
+
+.musical .play2 {
+    width: 6.1%;
+    bottom: 68%;
+}
+
+.musical .real2 {
+    width: 3%;
+    bottom: 71%;
+}
+
+.musical .tv2 {
+    width: 4%;
+    bottom: 30%;
+}
+
+.musical .comp2 {
+    width: 6%;
+    bottom: 78%;
+}
+
+.musical .original2 {
+    flex-grow: 1;
+    bottom: 62%;
+}
+
+.musical .remake2 {
+    width: 10%;
+    bottom: 62%;
+}
+
+.musical .legend2 {
+    width: 3%;
+    bottom: 78%;
+}
+
+.romcom .book2 {
+    width: 10.4%;
+    bottom: 60%;
+}
+
+.romcom .play2 {
+    width: 3%;
+    bottom: 67%;
+}
+
+.romcom .real2 {
+    width: 3%;
+    bottom: 70%;
+}
+
+.romcom .original2 {
+    flex-grow: 1;
+    bottom: 58%;
+}
+
+.romcom .remake2 {
+    width: 4.4%;
+    bottom: 56%;
+}
+
+.romcom .legend2 {
+    width: 3%;
+    bottom: 54%;
+}
+
+.thrill .book2 {
+    width: 25%;
+    bottom: 65%;
+}
+
+.thrill .comic2 {
+    width: 3%;
+    bottom: 56%;
+}
+
+.thrill .fact2 {
+    width: 3%;
+    bottom: 62%;
+}
+
+.thrill .real2 {
+    width: 3%;
+    bottom: 75%;
+}
+
+.thrill .tv2 {
+    width: 3%;
+    bottom: 76%;
+}
+
+.thrill .original2 {
+    flex-grow: 1;
+    bottom: 63%;
+}
+
+.thrill .remake2 {
+    width: 5%;
+    bottom: 64%;
+}
+
+.west .book2 {
+    width: 31.4%;
+    bottom: 68%;
+}
+
+.west .real2 {
+    width: 8.6%;
+    bottom: 67%;
+}
+
+.west .original2 {
+    flex-grow: 1;
+    bottom: 68%;
+}
+
+.west .remake2 {
+    width: 8.6%;
+    bottom: 68%;
+}
+
+
+
+/*data animation*/
+.control{
+    position: absolute;
+    bottom: 15%;
+    z-index: 1000;
+    transform: translate(85vw, 50%);  
+}
+
+.initial, .undo, .initial2, .undo2 {
+    position: absolute;
+    width: 3em;
+    height: 2.3em;
+    text-align: center;
+    color: #f4f4f4;
+    background-color: #3B3B3B;
+    padding-bottom: .7em; 
+}
+
+.initial, .initial2 {
+    opacity: .3;
+}
+
+.undo, .undo2 {
+    opacity: 1;
+    transform: translate(3em, 0);
+}
+
+.y-axis, .y-label1, .y-label2, .y-marker, .arrow-up, .arrow-down, .x-axis, .x-label1, .x-marker {
+    opacity: 0;
+}
+
+.y-axis2, .y-label1-2, .y-label2-2, .y-marker2, .arrow-up2, .arrow-down2, .x-axis2, .x-label1-2, .x-marker2 {
+    opacity: 0;
+}
+
+.film, .film2 {
+    position: absolute;
+    width: 90.1vw;
+    height: 1.1vw;
+    background-color: #3B3B3B;
+}
+
+.top {
+    transform: translate(7vw, 4.5vh);
+}
+
+.bottom {
+    transform: translate(7vw, 13.5vh);
+}
+
+.hold, .hold2 {
+    position: absolute;
+    top: 39vh;
+    height: 10vh;
+    width: 100vw;
+} 
+
+.film-mark {
+    width: 2px;
+    height: 100%;
+    background-color: #3B3B3B;
+    position: absolute;
+    transform: translate(0, 50%);
+}
+
+
+
+/*documentation*/
+.text {
+  transform: translate(0, 15vh);
+}
+
+.text h3 {
+    text-align: right;
+    width: 10vw;
+    transform: translate(230%, 1.8em);
+}
+
+.text p {
+    width: 40vw;
+    transform: translate(95%, 0);
+}
+
+
+
+/*small screen*/
+@media screen and (max-width: 1100px) {
+    .container, #menu, #bg1, #bg2, #bg3, #bg4 {
+        display: none;
+    }
+    
+    .min {
+        display: block;
+    }
+    
+    .message {
+        position: fixed;
+        top: 48%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+}
+
+@media screen and (max-height: 600px) {
+    .container, #menu, #bg1, #bg2, #bg3, #bg4 {
+        display: none;
+    }
+    
+    .min {
+        display: block;
+    }
+    
+    .message {
+        position: fixed;
+        top: 48%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+}

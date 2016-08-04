@@ -262,9 +262,9 @@ a {
 .graph-bg {
     background: #F4F4F4;
     position: absolute;
-    height: 80vh;
+    height: 100vh;
     width: 100vw;
-    bottom: 0;
+    top: 8em;
 }
 
 .graph {
